@@ -1,0 +1,14 @@
+<datasources xmlns="http://www.jboss.org/ironjacamar/schema">
+  <datasource jndi-name="jdbc/lms" pool-name="lmsPool">
+      <connection-url>jdbc:postgresql:lms</connection-url>
+      <driver>postgresql.jar</driver>
+     <!--
+  	  <connection-url>jdbc:derby://localhost:1527/lms;create=true;upgrade=true</connection-url>
+      <driver>derbyclient.jar</driver>
+      -->
+      <security>
+          <user-name>lms</user-name>
+          <password>lms</password>
+      </security>
+  </datasource>
+</datasources>

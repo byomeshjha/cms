@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+<definition name="blank-template" template="/WEB-INF/layouts/blank.jsp">
+  	<put-attribute name="title" value="BCA Law Firm" type="string" />
+  </definition>
+
+  <definition name="main-template" template="/WEB-INF/layouts/main.jsp">
+  	<put-attribute name="title" value="BCA Law Firm" type="string" />
+    <put-attribute name="header" value="/WEB-INF/layouts/header.jsp" />
+    <put-attribute name="nav" value="/WEB-INF/layouts/nav.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />
+  </definition>
+  
+  <definition name="easyui-template" template="/WEB-INF/layouts/maineasyui.jsp">
+  	<put-attribute name="title" value="BCA Law Firm" type="string" />
+    <put-attribute name="headereui" value="/WEB-INF/layouts/headereasyui.jsp" />
+    <put-attribute name="footereui" value="/WEB-INF/layouts/footereasyui.jsp" />
+  </definition>
+
+</tiles-definitions>

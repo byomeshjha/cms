@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>    
+    
+    <definition extends="blank-template" name="login">
+		<put-attribute name="content" value="/WEB-INF/views/login.jsp"/>
+		<put-attribute name="pageId" value="login"/>
+    </definition>
+    
+    <definition extends="main-template" name="home">
+		<put-attribute name="content" value="/WEB-INF/views/home.jsp"/>
+		<put-attribute name="pageId" value="home"/>
+    </definition>
+    
+    <definition extends="main-template" name="caseList">
+		<put-attribute name="content" value="/WEB-INF/views/case/list.jsp"/>
+		<put-attribute name="pageId" value="caseList"/>
+    </definition>
+
+    
+    <definition extends="main-template" name="registerCase">
+		<put-attribute name="content" value="/WEB-INF/views/case/register.jsp"/>
+		<put-attribute name="pageId" value="registerCase"/>
+    </definition>
+    
+    <definition extends="main-template" name="clientList">
+		<put-attribute name="content" value="/WEB-INF/views/client/list.jsp"/>
+		<put-attribute name="pageId" value="clientList"/>
+    </definition>
+
+    
+    <definition extends="main-template" name="registerClient">
+		<put-attribute name="content" value="/WEB-INF/views/client/register.jsp"/>
+		<put-attribute name="pageId" value="registerClient"/>
+    </definition>
+    
+    <definition extends="main-template" name="registerMember">
+		<put-attribute name="content" value="/WEB-INF/views/client/member.jsp"/>
+		<put-attribute name="pageId" value="registerMember"/>
+    </definition>
+    
+    <definition extends="main-template" name="schedules">
+		<put-attribute name="content" value="/WEB-INF/views/calendar/schedules.jsp"/>
+		<put-attribute name="pageId" value="schedules"/>
+    </definition>
+    
+    
+</tiles-definitions>

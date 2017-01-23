@@ -1,0 +1,33 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+		http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+		version="2.1">
+	<persistence-unit name="lms">
+		<jta-data-source>jdbc/lms</jta-data-source>
+		<!--class>com.lms.common.AuditEntity</class-->
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+			<property name="eclipselink.jdbc.batch-writing" value="jdbc"/>
+			<property name="eclipselink.logging.level" value="FINE"/>
+			<property name="hibernate.show_sql" value="true"/>
+
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+			<property name="javax.persistence.schema-generation.scripts.action" value="create"/>
+			<property name="javax.persistence.schema-generation.scripts.create-target" value="/tmp/create.sql"/>
+			<property name="javax.persistence.sql-load-script-source" value="META-INF/init-data.sql"/>
+			
+			<!-- 
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql:audit"/>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+			<property name="javax.persistence.jdbc.user" value="audit"/>
+			<property name="javax.persistence.jdbc.password" value="audit"/>
+			<property name="hibernate.ogm.datastore.provider" value="infinispan"/>
+			<property name="kundera.dialect" value="neo4j"/>
+		<provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider>
+		<provider>com.impetus.kundera.KunderaPersistence</provider>
+		<provider>org.datanucleus.api.jpa.PersistenceProviderImpl</provider>
+			-->
+		</properties>
+	</persistence-unit>
+</persistence>

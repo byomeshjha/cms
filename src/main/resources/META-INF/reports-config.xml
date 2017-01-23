@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<reports>
+	<report id="1">
+		<display-name>Batch Status</display-name>
+		<main-report-jrxml>BatchStatus.jrxml</main-report-jrxml>
+		<report-relative-path>/reports</report-relative-path>
+		<sub-reports>
+			<sub-report id="1">
+				<sub-report-jrxml>BatchStatusSub1.jrxml</sub-report-jrxml>
+				<report-relative-path>/reports</report-relative-path>
+				<sub-report-parameter>subreportParameter</sub-report-parameter>
+			</sub-report>
+		</sub-reports>
+	</report>
+</reports>

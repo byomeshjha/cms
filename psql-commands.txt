@@ -1,0 +1,17 @@
+#Login to psql as super user (postgres/****) or in my case bjha/bjha
+#Execute these commands from psql command prompt.
+
+
+DROP DATABASE lms;
+DROP USER lms;
+CREATE USER lms WITH PASSWORD 'lms';
+CREATE DATABASE lms;
+GRANT ALL PRIVILEGES ON DATABASE lms TO lms;
+
+
+#quit database super login
+\q
+
+#Login to lms database
+psql -d lms -U lms
+

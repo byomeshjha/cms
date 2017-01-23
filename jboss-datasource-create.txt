@@ -1,0 +1,9 @@
+jboss-cli.sh or jboss-cli.bat
+
+module add --name=org.postgres --resources=${user.home}/.m2/repository/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar --dependencies=javax.api,javax.transaction.api
+
+/subsystem=datasources/jdbc-driver=postgres:add(driver-name="postgres",driver-module-name="org.postgres",driver-class-name=org.postgresql.Driver)
+
+data-source add --jndi-name=java:/jdbc/enet --name=eNetPool --connection-url=jdbc:postgresql://localhost/enet --driver-name=postgres --user-name=enet --password=enet123$
+
+/subsystem=datasources/data-source=eNetPool/:write-attribute(name=max-pool-size,value=10)

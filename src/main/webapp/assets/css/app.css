@@ -1,0 +1,66 @@
+.main-center {
+ 	/*margin-top: 10px;*/
+ 	/*margin: 0 auto;*/
+ 	margin-left:20px;
+ 	max-width: 28%;
+    padding: 4px 15px;
+}
+
+.main-center-wide {
+ 	/*margin-top: 10px;*/
+ 	/*margin: 0 auto;*/
+ 	margin-left:20px;
+ 	min-width: 35%;
+    padding: 4px 15px;
+}
+
+.main-center-wider {
+ 	/*margin-top: 10px;*/
+ 	/*margin: 0 auto;*/
+ 	margin-left:20px;
+ 	min-width: 50%;
+    padding: 4px 15px;
+}
+.main-center-max {
+ 	/*margin-top: 10px;*/
+ 	/*margin: 0 auto;*/
+ 	margin-left:20px;
+ 	min-width: 99%;
+    padding: 4px 15px;
+}
+.position-left {
+	float:left;
+}
+
+.position-right {
+	float:right;
+}
+
+.control-label {
+	font-weight: normal;
+}
+
+.panel-margin-top-10 {
+	margin-top:10px;
+}
+
+.panel-margin-top-20 {
+	margin-top:20px;
+}
+
+.Editor-container {
+	margin-top: 0px;
+}
+
+a[title="Toggle Screen"] {
+	/*display:none;*/
+}
+.table #document-list {
+	width: 100%!important;
+}
+.modal-width-75 {
+	width: 75%;
+}
+.margin-left-25 {
+	margin-left: 0px;
+}
